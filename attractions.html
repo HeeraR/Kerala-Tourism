@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerala Tourism - Attractions</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="/images/keralatourism.png">
+
+    <style>
+        .attraction {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .attraction img {
+            flex: 0 0 50%;
+            margin-right: 20px;
+        }
+
+        .attraction-info {
+            flex: 1;
+        }
+
+        /* For smaller screens, stack image and content vertically */
+        @media screen and (max-width: 768px) {
+            .attraction {
+                flex-direction: column;
+            }
+
+            .attraction img {
+                margin-right: 0;
+                margin-bottom: 20px;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="header">
+            <div class="bg-text">
+                <h1>Attractions</h1>
+            </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Top Attractions</h2>
+            <div class="attraction">
+                <img src="images/backwaters.jpg" alt="Alleppey Backwaters">
+                <div class="attraction-info">
+                    <h3>Alleppey Backwaters</h3>
+                    <p>Known as the "Venice of the East", Alleppey is famous for its boat races, houseboats, and
+                        tranquil backwaters.</p>
+                    <p>Activities: Boat races, houseboat cruises, backwater tours.</p>
+                    <p>Location: Alappuzha district, Kerala.</p>
+                </div>
+            </div>
+            <div class="attraction">
+                <img src="images/munnar.jpg" alt="Munnar Hill Station">
+                <div class="attraction-info">
+                    <h3>Munnar Hill Station</h3>
+                    <p>Munnar is a beautiful hill station known for its tea gardens, lush greenery, and scenic views.
+                    </p>
+                    <p>Activities: Tea plantation visits, trekking, wildlife spotting.</p>
+                    <p>Location: Idukki district, Kerala.</p>
+                </div>
+            </div>
+            <div class="attraction">
+                <img src="images/fortkochi.jpg" alt="Fort Kochi">
+                <div class="attraction-info">
+                    <h3>Fort Kochi</h3>
+                    <p>Fort Kochi is a historical city with influences from the Portuguese, Dutch, and British. It's
+                        known for its old-world charm and cultural heritage.</p>
+                    <p>Activities: Heritage walks, visiting colonial-era buildings, exploring local markets.</p>
+                    <p>Location: Ernakulam district, Kerala.</p>
+                </div>
+            </div>
+            <div class="attraction">
+                <img src="images/periyar.jpg" alt="Periyar Wildlife Sanctuary">
+                <div class="attraction-info">
+                    <h3>Periyar Wildlife Sanctuary</h3>
+                    <p>Located in Thekkady, the Periyar Wildlife Sanctuary is a renowned wildlife reserve famous for its
+                        elephants and diverse flora and fauna.</p>
+                    <p>Activities: Wildlife safaris, bamboo rafting, nature walks.</p>
+                    <p>Location: Idukki district, Kerala.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Kerala Tourism. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
