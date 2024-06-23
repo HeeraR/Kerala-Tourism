@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerala Tourism - Culture</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .culture {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .culture img {
+            flex: 0 0 50%;
+            margin-right: 20px;
+        }
+
+        .culture-info {
+            flex: 1;
+        }
+
+        /* For smaller screens, stack image and content vertically */
+        @media screen and (max-width: 500px) {
+            .culture {
+                flex-direction: column;
+            }
+
+            .culture img {
+                margin-right: 0;
+                margin-bottom: 20px;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Culture</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="attractions.html">Attractions</a></li>
+            <li><a href="culture.html">Culture</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Culture and Heritage</h2>
+            <p>Kerala is known for its classical dance forms, music, and festivals. Experience the rich cultural
+                heritage through Kathakali performances, traditional music, and local festivals.</p>
+            <div class="culture">
+                <img class="kathakali-img" src="./images/kathakali.jpg" alt="Kathakali Dance">
+                <div class="culture-info">
+                    
+                    <h3>Kathakali Dance</h3>
+                    <p>
+                        Kathakali is an evolved dance form popular in the South Indian state of Kerala. This Indian
+                        classical dance involves storytelling activities through fascinating footwork and expressive
+                        gestures of face and hands accompanied by music and vocal performance.
+                    </p>
+                </div>
+            </div>
+            <div class="culture">
+                <img class="onam-img" src="images/onam.jpg" alt="Onam Festival">
+                <div class="culture-info">
+                    <h3>Onam Festival</h3>
+                    <p>Onam is an annual harvest and cultural festival related to Hinduism that is celebrated mostly by
+                        the people of Kerala. A major annual event for Keralites, it is the official festival of the
+                        state and includes a spectrum of cultural events. Onam commemorates Vamana and the generous but
+                        egotistical daitya king Mahabali.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Kerala Tourism. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
